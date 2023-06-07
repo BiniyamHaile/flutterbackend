@@ -20,17 +20,17 @@ mongoose.connection.on("error" , (error)=>{
 
 async function startServer(){
     await mongoose.connect(MONGO_URL)
-   await makeRequest();
+//    await makeRequest();
 //    await fetchStanding(61);
 //    await fetchStanding(135);
- await fetchFixturesByLeagueId(135);
+//  await fetchFixturesByLeagueId(135);
            server.listen(PORT , async ()=>{         
         console.log(`Listening on port : ${process.env.port || PORT}`)
-        console.log("running ....") 
+        console.log("pppp ....") 
     })
   
   
-    setInterval(makeRequest, 2 * 60 * 60 * 1000);
+    // setInterval(makeRequest, 2 * 60 * 60 * 1000);
  
 }
 

@@ -3,7 +3,7 @@ const cors = require("cors")
 const express = require("express")
 const League  = require("./leagues")
 const getMatchesByLeagueId = require("./models/matches.model")
-
+const apiRoute = require("./routes/apiRouter")
 require("dotenv").config()
     
 const app  = express()
@@ -11,7 +11,9 @@ const app  = express()
 
 app.use(express.json())
 
-app.use(cors())      
+app.use(cors())   
+
+app.use("/api" , apiRoute)
   
 app.get("/news" , async(req ,res)=>{
     console.log("incoming request.......")
