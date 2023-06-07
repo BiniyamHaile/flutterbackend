@@ -6,7 +6,7 @@
   "scripts": {
     "watch": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "serve build -s -n -L -p 3000"
   },
   "keywords": [],
   "author": "",
