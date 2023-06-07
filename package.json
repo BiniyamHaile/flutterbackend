@@ -9,8 +9,8 @@
     "start": "node server.js",
     "build" : "npm i"
   },
-  "engines": {
-    "node": "^20.10.0"
+ "engines": {
+    "node": "^7.10.0"
   },
   "keywords": [],
   "author": "",
