@@ -3,8 +3,8 @@ const http = require("http")
 const PORT = 3000
 const mongoose = require("mongoose")
 const MONGO_URL = "mongodb+srv://biniyhaile:SALQzu4JJVjmuO4V@cluster0.weqnmmv.mongodb.net/"
-const server = http.createServer(process.env.port ||app)
-const makeRequest = require("./makearequest")
+const server = http.createServer(process.env.PORT ||app)
+// const makeRequest = require("./makearequest")
 // const fetchStanding = require('./requests')
 const fetchFixturesByLeagueId = require('./fetch/new_fetch')
 const getMatchesByLeagueId = require("./models/matches.model")
@@ -26,7 +26,7 @@ async function startServer(){
 //  await fetchFixturesByLeagueId(135);
            server.listen(PORT , async ()=>{         
         console.log(`Listening on port : ${process.env.port || PORT}`)
-        console.log("pppp ....") 
+        console.log("WORKING ....") 
     })
   
   
