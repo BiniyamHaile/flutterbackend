@@ -1,6 +1,6 @@
 const app = require('./app')
 const http = require("http")
-const PORT = 8000
+const PORT = 3001
 const mongoose = require("mongoose")
 const MONGO_URL = "mongodb+srv://biniyhaile:SALQzu4JJVjmuO4V@cluster0.weqnmmv.mongodb.net/"
 const server = http.createServer(  app)
