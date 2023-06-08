@@ -1,8 +1,8 @@
-// const NewsAPI = require('newsapi');
-// const uuid = require("uuid")
-// const news = require("./mongoose")
-// // const translateText = require("./translate")
-// const newsapi = new NewsAPI('e3cc4252264749dfba78dc4a8b3473f1');
+const NewsAPI = require('newsapi');
+const uuid = require("uuid")
+const news = require("./mongoose")
+// const translateText = require("./translate")
+const newsapi = new NewsAPI('e3cc4252264749dfba78dc4a8b3473f1');
 
 
 
