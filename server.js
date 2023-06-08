@@ -1,9 +1,9 @@
 const app = require('./app')
 const http = require("http")
-const PORT = 3000
+const PORT = 8000
 const mongoose = require("mongoose")
 const MONGO_URL = "mongodb+srv://biniyhaile:SALQzu4JJVjmuO4V@cluster0.weqnmmv.mongodb.net/"
-const server = http.createServer(process.env.PORT ||app)
+const server = http.createServer(  app)
 // const makeRequest = require("./makearequest")
 // const fetchStanding = require('./requests')
 const fetchFixturesByLeagueId = require('./fetch/new_fetch')
@@ -24,7 +24,7 @@ async function startServer(){
 //    await fetchStanding(61);
 //    await fetchStanding(135);
 //  await fetchFixturesByLeagueId(135);
-           server.listen(PORT , async ()=>{         
+           server.listen(process.env.port || PORT, async ()=>{         
         console.log(`Listening on port : ${process.env.port || PORT}`)
         console.log("WORKING ....") 
     })
